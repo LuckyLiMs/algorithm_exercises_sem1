@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 68</title>
+</head>
+
+<body>
+    <h1>Analise o código e assinale a alternativa correta.</h1>
+    <p>
+        Você está criando um programa para calcular se uma pessoa tem um índice de massa
+        corporal (IMC) saudável com base em seu peso e altura. Abaixo está o código do
+        programa que você escreveu diretamente no programa principal. Qual é a alternativa
+        correta para determinar se o código funciona corretamente?
+    </p>
+    <p>
+        let peso = 70; <br>
+        let altura = 1.75; <br>
+        let imc = peso / (altura * altura); <br>
+        if (imc >= 18.5 && imc <= 24.9) { <br>
+            console.log("IMC saudável"); <br>
+            } else { <br>
+            console.log("IMC não saudável"); <br>
+            }
+    </p>
+    <section>
+
+        <input type="radio" name="alternative" id="alt1" value="a">
+        <label for="alt1" name="label">A) O código está correto. Ele vai imprimir "IMC saudável" quando o IMC estiver entre 18.5 e 24.9 (inclusive), caso contrário, imprimirá "IMC não saudável".</label>
+
+        <br>
+
+        <input type="radio" name="alternative" id="alt2" value="b">
+        <label for="alt2" name="label">B) O operador <= deve ser substituído por < na linha if (imc >= 18.5 && imc <= 24.9).</label>
+
+        <br>
+
+        <input type="radio" name="alternative" id="alt3" value="c">
+        <label for="alt3" name="label">C) A variável altura deve ser inicializada com um número inteiro, como let altura = 175, para testar corretamente se o código funciona.</label>
+
+        <br>
+
+        <input type="radio" name="alternative" id="alt4" value="d">
+        <label for="alt4" name="label">D) Todas as alternativas estão erradas.</label>
+
+        <br>
+
+        <input type="radio" name="alternative" id="alt5" value="e">
+        <label for="alt5" name="label">E) A variável peso deve ser inicializada com uma string, como let peso = "70", para
+            testar corretamente se o código funciona.</label>
+
+    </section>
+    <br>
+    <button>-></button>
+    <br>
+    <hr>
+    <br>
+    <p id="r"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
