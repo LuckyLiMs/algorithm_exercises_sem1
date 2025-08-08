@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        h1 {
+            margin-left: 2%;
+        }
+
+        main {
+            background-color: #ecf0f1;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #616161;
+            color: white;
+            text-align: center;
+        }
+
+        .flex-complete {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border-vertical {
+            border-left: 3px solid black;
+            margin-right: 5px;
+        }
+
+        .card-login-content {
+            background-color: #d3daeb;
+            border-radius: 5%;
+            padding: 3%;
+        }
+
+        .lineBreak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3%;
+            font-size: 30px;
+        }
+
+        .resumo-cadastro {
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 50px;
+        }
+
+        /* .btn {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #98b5bd;
+            border: none;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .btn:hover {
+            background-color: #616161;
+            font-size: 25px;
+            cursor: pointer;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container mt-3">
+            <div class="border-vertical">
+                <h1 id="title"></h1>
+            </div>
+            <p>
+                Crie um programa para controle de estoque de uma loja, onde seja possível cadastrar
+                produtos com as informações: nome, preço, quantidade em estoque e categoria. <br>
+                Após cada inserção de produto, o programa deve mostrar todos os produtos
+                cadastrados até o momento e a quantidade total de itens em estoque.
+            </p>
+        </div>
+    </header>
+    <main>
+        <hr>
+
+        <section>
+            <div class="container">
+                <div class="card-login flex-complete">
+                    <div class="card-login-content">
+                        <h2>Cadastro de Produtos</h2>
+                        <div class="login-inputs mt-3">
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" class="w-100">
+                        </div>
+                        <div class="login-inputs mt-3">
+                            <label for="preco">Preço:</label>
+                            <input type="number" id="preco" class="w-100">
+                        </div>
+                        <div class="login-inputs mt-3">
+                            <label for="quantidade">Quantidade:</label>
+                            <input type="number" id="quantidade" class="w-100">
+                        </div>
+                        <div class="login-inputs mt-3">
+                            <label for="categoria">Categoria:</label>
+                            <input type="text" id="categoria" class="w-100">
+                        </div>
+                        <div class="login-button mt-3">
+                            <button class="btn btn-warning">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="lineBreak">- / / -</div>
+        <section>
+            <div class="container">
+                <div class="list-cadastro row flex-complete" id="list-cadastro"></div>
+                <div class="resumo-cadastro flex-complete" id="resumo-cadastro">
+                    Total de cadastros: 0 <br>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5">
+        &copy; Lucas dos Santos Siqueira.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
