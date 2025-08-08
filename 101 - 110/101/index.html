@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 101</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-size: 16px;
+        }
+        h1{
+            margin-left: 2%;
+        }
+        footer{
+            width: 100%;
+            background-color: #616161;
+            color: white;
+            text-align: center;
+        }
+        .border-vertical{
+            border-left: 3px solid black;
+            margin-right: 5px;
+        }
+        .container{
+            padding: 1% 5% 1% 5%;
+            display: flex;
+        }
+        .w-100{
+            width: 100%;
+        }
+        .d-block{
+            display: flex;
+            flex-direction: column;
+        }
+        .btn{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            background-color: #98b5bd;
+            border: none;
+            color: white;
+            border-radius: 50%;
+        }
+        .btn:hover{
+            background-color: #616161;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container d-block">
+            <div class="border-vertical">
+                <h1>101</h1>
+            </div>
+            <p>
+                Crie uma aplicação que receba um número qualquer.
+                Se o número for positivo, imprimir o número digitado e sua raiz quadrada.
+                Se o número for negativo, imprimir o número digitado e seu valor elevado ao quadrado.
+            </p>
+        </div>
+    </header>
+    <main>
+        <div class="container d-block">
+            <div class="w-100">
+                <label for="number">Digite um número:</label>
+                <input type="number" id="number">
+            </div>
+            <div style="display: flex; margin-left: auto;">
+                <button class="btn">></button>
+            </div>
+            <hr>
+            <div class="container">
+                <p id="r"></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; Lucas dos Santos Siqueira.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

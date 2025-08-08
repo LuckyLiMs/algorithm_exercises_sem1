@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        h1 {
+            margin-left: 2%;
+        }
+
+        main {
+            background-color: #ecf0f1;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #616161;
+            color: white;
+            text-align: center;
+        }
+
+        .flex-complete {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .border-vertical {
+            border-left: 3px solid black;
+            margin-right: 5px;
+        }
+
+        .card-login-content {
+            background-color: #d3daeb;
+            border-radius: 5%;
+            padding: 3%;
+        }
+
+        .lineBreak {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3%;
+            font-size: 30px;
+        }
+
+        .resumo-cadastro {
+            font-size: 20px;
+            font-weight: bold;
+            border: 1px solid;
+            border-radius: 50px;
+        }
+
+        /* .btn {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            background-color: #98b5bd;
+            border: none;
+            color: white;
+            border-radius: 50%;
+        }
+
+        .btn:hover {
+            background-color: #616161;
+            font-size: 25px;
+            cursor: pointer;
+        } */
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container mt-3">
+            <div class="border-vertical">
+                <h1 id="title"></h1>
+            </div>
+            <p>
+                (1.00 pt) Crie uma aplicação web utilizando HTML, CSS e JavaScript que simule o
+                cadastro de carros. <br>
+                A aplicação deve conter um formulário com os seguintes campos: <br>
+                Marca, Modelo, Ano e Cor (com as opções: Vermelho, Preto e Branco). <br>
+                (2.00 pt) Ao clicar no botão "Cadastrar", os seguintes passos devem ocorrer: <br>
+                Os dados preenchidos no formulário devem ser armazenados em um objeto com as
+                propriedades correspondentes. <br>
+                Este objeto deve ser adicionado a um array. <br>
+                A cada nova interação (ou seja, a cada clique no botão de cadastro), um novo objeto
+                deve ser criado e adicionado ao array (exibir o array no console.log). <br>
+                (4.00 pt) Após cada cadastro, a lista completa de carros cadastrados deve ser exibida de
+                forma visual e organizada. <br>
+                (3.00 pt) A aplicação também deve exibir um resumo com: <br>
+                A quantidade total de carros cadastrados até o momento. <br>
+                A quantidade de carros por cor, com a seguinte estrutura: <br>
+                Total de cadastros: 4 <br>
+                Vermelho: 2 Preto: 1 Branco: 1
+            </p>
+        </div>
+    </header>
+    <main>
+        <hr>
+
+        <section>
+            <div class="container">
+                <div class="card-login flex-complete">
+                    <div class="card-login-content">
+                        <h2>Cadastro de Carros</h2>
+                        <div class="login-inputs mt-3">
+                            <label for="marca">Marca:</label>
+                            <input type="text" id="marca" class="w-100">
+                        </div>
+                        <div class="login-inputs mt-3">
+                            <label for="modelo">Modelo:</label>
+                            <input type="text" id="modelo" class="w-100">
+                        </div>
+                        <div class="login-inputs mt-3">
+                            <label for="ano">Ano:</label>
+                            <input type="number" id="ano" class="w-100">
+                        </div>
+                        <div class="login-inputs mt-3">
+                            <label for="cor">Cor:</label>
+                            <select name="cor" id="cor">
+                                <option value="vermelho">Vermelho</option>
+                                <option value="preto">Preto</option>
+                                <option value="branco">Branco</option>
+                            </select>
+                        </div>
+                        <div class="login-button mt-3">
+                            <button class="btn btn-danger">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="lineBreak">- / / -</div>
+        <section>
+            <div class="container">
+                <div class="list-cadastro row flex-complete" id="list-cadastro"></div>
+                <div class="resumo-cadastro flex-complete" id="resumo-cadastro">
+                    Total cadastros: 0 <br>
+                    Vermelho: 0 | Preto: 0 | Branco: 0
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="mt-5">
+        &copy; Lucas dos Santos Siqueira.
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
